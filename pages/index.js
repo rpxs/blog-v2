@@ -6,7 +6,7 @@ export const config = {
 export default function Home() {
   return (
     <div className="flex flex-col bg-slate-900 font-mono text-white min-h-screen items-center">
-      <p className="my-10">fish&apos;s blog</p>
+      <p className="my-10 text-lg">fish&apos;s blog</p>
       <p className="mb-10 text-white">all posts: </p>
       <ul className="list-disc">
         {posts.map((post) => (
