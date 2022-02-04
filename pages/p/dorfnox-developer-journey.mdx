@@ -1,0 +1,61 @@
+import Wrapper from "../../components/Wrapper"
+export const config = {
+  unstable_runtimeJS: false,
+};
+export const meta = {
+    title: "Dorfnox's Developer Journey"
+}
+
+A conversation with Brendan Pierce, better known as Dorfnox online, about his pathway into the world of software development.
+
+Brendan has been a mentor to me ever since I started dabbling with code. Without him, I would have probably spent two days obsessing over git errors, wondering how to get a package-lock.json, and then given up on coding entirely. I got the opportunity to interview him recently, and we talked about how Dorfnox got into computer science as a career.
+
+**fish: Tell us a little bit about yourself.**
+
+**Pierce:** I'm 29 years old, boy, and I like playing video games.
+
+**fish: How did you first get into programming?**
+
+**Pierce:** While I was in Japan, a roommate from college started going to a bootcamp in France. He mentioned it, it was called 42, and it seemed like he was having a good time. So I went to the American chapter, which is in California, and yeah it was a good school. It's interesting living in Silicon Valley, lots of money being thrown around. The school was completely free, there was no catch to it either, nothing like, “Oh once you graduate you gotta work for us for a little while.” So it was really nice! I got my first internship, then that led to a job, then another job, and now here I am!
+
+**fish: What are you doing in your current job?**
+
+**Pierce:** To boil it down, I'm building customized systems for different clients at Beezwax. So the customization part is a little creative in terms of how I go about doing something and the tools I use. In essence, it’s to get our clients from Point A to Point B on a project.
+
+**fish: Has the pandemic affected you in terms of work?**
+
+**Pierce:** I’d say no, I was working remotely before the pandemic. So as for COVID-19, unfortunately it didn’t affect us, we still have to work, all our clients are the sort of companies that won’t go down during the pandemic. Too big to fail sorta thing. So for me I haven’t felt the effect so much.
+
+**fish: Do you work in a team environment?**
+
+**Pierce:** Yeah, and it's interesting, so let’s say for example there are 5 client projects im on right now. One of them might be just me and the client, and we just work one on one, a couple others might just be me and 2 other programmers who I work side by side with to figure out some things. A couple others might be me as a developer helping out on a project, and my big thing right now is the internal payment tool which everyone is gonna use to do their work. So it’s kinda like a mixed bag.
+
+**fish: What tech stack do you work with?**
+
+**Pierce:** There's not really a specific stack I use, and that's where the customization comes in. Today I was doing a lot of HTML and Javascript. Yesterday I was doing some Oracle database stuff, day before that I was doing a node server, day before that was doing a python server, day before that I was working on an internal system for our company, it was basically like a transaction model that can do a bunch of things in one go, without error.
+
+**fish: So it's a little bit all over the place, I guess.**
+
+**Pierce:** Exactly and I kinda like that, I like the creative aspect of the work I do right now.
+
+**fish: What do you use FileMaker for?**
+
+**Pierce:** So that's interesting because the company I work for a large portion of the work they do is in FileMaker and im in an interesting space because FileMaker is a cool tool it's very quick to develop on you can get something up and running really quickly, which is a bonus for clients when they want something to happen really quickly. Where I come in is, I kinda fill these gaps that filemaker can't complete so I build tools that integrate with FileMaker to improve its functionality, and that’s part of the work I do.
+
+**fish: Any specific language that you prefer, or enjoy working with?**
+
+**Pierce:** Not really, I tend to prefer whatever I'm learning at the moment, like when I was building my Discord bot, I was using Node.js. So I was learning a lot about JavaScript and node servers, so that was pretty interesting. But no preferred tool at the moment.
+
+**fish: WIth so many things like new languages and tools coming out by the year, do you find it hard to adapt with changing times?**
+
+**Pierce:** I find it's tough for the older generation now that there's so many different not just languages, but frameworks for every language that come out. Like a lot of the people that I work with are older and they find certain things difficult to grasp, I guess you could say since a lot of them come from a FileMaker background. FileMaker isn't typical coding, it's scripting. For me, I don't find that much of an issue since I only started programming 4 years ago. So I'm still *relatively* fresh I guess. So when new things come out I like to play around with them, and I don't really find it too difficult.
+
+**fish: How do you view the future of computer science in general?**
+
+**Pierce:** Anyone can program so it doesn't really matter the business sector you’re in per say, because if you have someone on your team that can program, that's a huge win because they can automate things and improve workflows and do this stuff that’s beneficial to any industry. Programmers are in basically every part of the workforce and that's why they’re just so high demand for us because we wanted to start moving into that space, we have been moving into that space, and personally I've been trying to get my friends and family to program, just to kinda have fun with it.
+
+export default ({ children }) => (
+    <Wrapper meta={meta} children={children} className="flex flex-col min-w-screen bg-black min-h-screen"/>
+)
+
+
