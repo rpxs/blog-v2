@@ -14,6 +14,7 @@ export default function Home() {
         <div key={post.key}>
           <a
             href={"/p/" + post.slug}
+            rel="preload"
             className="p-5 bg-slate-800 text-gray-200 font-semibold rounded-sm hover:bg-blue-600"
           >
             {post.title}
