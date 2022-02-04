@@ -1,8 +1,9 @@
+import posts from "../lib/posts";
 export const config = {
   unstable_runtimeJS: false,
 };
 
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <div className="flex flex-col bg-slate-900 min-h-screen items-center">
       <h1 className="mt-20 mb-10 sm:text-4xl text-3xl text-white font-bold">
@@ -23,7 +24,7 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getServerSideProps() {
-  const posts = require("../lib/posts");
-  return { props: { posts } };
-}
+// export async function getServerSideProps() {
+//   const posts = require("../lib/posts");
+//   return { props: { posts } };
+// }
