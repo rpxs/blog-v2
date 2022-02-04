@@ -9,9 +9,16 @@ export default function Wrapper(props) {
       <div className="my-20 sm:text-4xl text-3xl font-bold">
         <h1>{props.meta.title}</h1>
       </div>
-      <div className="w-5/6 flex flex-col gap-5 mb-10 text-lg">
+      <div className="w-5/6 flex flex-col gap-5 mb-5 text-lg">
         {props.children}
       </div>
+      <a
+        className="px-5 py-2 font-semibold mb-5 bg-teal-600 hover:bg-teal-700 rounded-full"
+        href="../"
+        rel="preload"
+      >
+        go back
+      </a>
     </div>
   );
 }
