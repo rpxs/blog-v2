@@ -16,9 +16,8 @@ export default function Home() {
       </head>
       <div className="flex flex-col bg-slate-900 font-mono text-white min-h-screen items-center">
         <p className="my-10 text-lg">fish&apos;s blog</p>
+        <p className="text-white mb-10">all posts:</p>
         <ul className="list-disc">
-          {" "}
-          all posts:
           {posts.map((post, index) => (
             <li key={index}>
               <a
