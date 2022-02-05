@@ -9,14 +9,14 @@ export default function Home() {
       <p className="my-10 text-lg">fish&apos;s blog</p>
       <p className="mb-10 text-white">all posts: </p>
       <ul className="list-disc">
-        {posts.map((post) => (
-          <li key={post.key}>
+        {posts.map((post, index) => (
+          <li key={index}>
             <a
               href={"/p/" + post.slug}
               rel="preload"
-              className="underline decoration-2 text-blue-500 hover:text-blue-600"
+              className="underline sm:text-base text-sm decoration-2 text-blue-500 hover:text-blue-600"
             >
-              {post.title}
+              {post.title} • {post.publishedAt}
             </a>
           </li>
         ))}

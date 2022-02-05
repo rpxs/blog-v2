@@ -9,7 +9,7 @@ export default function Wrapper(props) {
       <div className="my-20 sm:text-4xl text-3xl font-bold">
         <h1>{props.meta.title}</h1>
       </div>
-      <div className="w-5/6 flex flex-col gap-5 mb-5 text-lg">
+      <div className="prose prose-invert mb-5 w-5/6 text-lg">
         {props.children}
       </div>
       <a
