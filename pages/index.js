@@ -9,10 +9,6 @@ export default function Home() {
     <>
       <head>
         <title>fish&apos;s blog</title>
-        <meta
-          name="description"
-          content="a blog containing the thoughts of fish. read for opinions and interviews on web dev."
-        ></meta>
       </head>
       <div className="flex flex-col bg-slate-900 font-mono text-white min-h-screen items-center">
         <p className="my-10 text-lg">fish&apos;s blog</p>
