@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@next/mdx": "^12.0.10",
+    "ioredis": "^4.28.5",
     "next": "^12.0.10",
+    "next-mdx-remote": "^4.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-feather": "^2.0.9"
