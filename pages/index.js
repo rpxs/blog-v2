@@ -10,8 +10,8 @@ export default function Home() {
       <head>
         <title>fish&apos;s blog</title>
       </head>
-      <div className="flex flex-col bg-slate-900 font-mono text-white min-h-screen items-center">
-        <p className="my-10 text-lg">fish&apos;s blog</p>
+      <div className="flex flex-col bg-slate-900 font-sans text-slate-200 min-h-screen items-center">
+        <p className="my-10 text-2xl font-semibold">fish&apos;s blog</p>
         <p className="text-white mb-10">all posts:</p>
         <ul className="list-disc">
           {posts.map((post, index) => (

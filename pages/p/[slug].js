@@ -16,6 +16,15 @@ export default function Post({ source }) {
 export async function getServerSideProps(ctx) {
   const slug = ctx.query.slug;
   const source = await client.hget("posts", slug);
+  if (typeof source != "string") {
+    return {
+      redirect: {
+        permanent: false,
+        destination: "/404",
+      },
+      props: {},
+    };
+  }
   const mdxSource = await serialize(source, { parseFrontmatter: true });
   return { props: { source: mdxSource } };
 }
