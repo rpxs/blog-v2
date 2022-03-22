@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# fish blog
 
-## Getting Started
+I made this after getting tired of Sanity, feel free to fork and PR in stuff you'd like to see.
 
-First, run the development server:
+Why did I move away from Sanity? Well, I didn't like that I had to have the editor separately, and I had no control if I wanted to add custom components. The current solution (in this blog) works pretty well! 
 
-```bash
-npm run dev
-# or
-yarn dev
+## Redis as a CMS??? Are you crazy?
+
+This isn't exactly a full-fledged CMS. Obviously I don't store any images in Redis. So I feel like we could add a dropzone sort of functionality to the current editor sometime in the future, in the meantime, stay put!
+
+## I want my own Redis blog!!! 
+
+You can fork the repository, feel free to star it too haha. If you think something can be improved in the UI, make a PR, I won't mind! 
+
+## Wait so actually, how does this work?
+
+I store posts in a redis hashmap. The post content has frontmatter, which is used for SEO on the page, and it also has MDX. You can add custom components into this, as long as you load those components in your /pages/p/[slug].js file. The main issue people have with Redis is memory. Storing in memory is costly, but we're not storing any images directly in Redis, so we'll be fine on the cost side of things.
+
+## Example Post???
+
+Here's an example post, remember, you can add custom components :)
+```md
+---
+title: Markdown Is So Cool
+slug: markdown-love
+publishedAt: 03/16/22
+--- 
+
+I **love** markdown, I think it's *super cool* and will use it in my future projects hehe
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
