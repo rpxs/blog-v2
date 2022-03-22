@@ -33,9 +33,9 @@ I **love** markdown, I think it's *super cool* and will use it in my future proj
 
 I was trying to implement next-auth but didn't finish. Here's a roadmap of stuff I plan to add in the future :O
 
-- [] Use Next-Auth.js for editor
-- [] Implement a comments system
-- [] Fix the bad editor UI
-- [] Compartmentalize some code
-- [] Stop lib/posts.js and use the hashmap to get posts on frontpage
+- [ ] Use Next-Auth.js for editor
+- [ ] Implement a comments system
+- [ ] Fix the bad editor UI
+- [ ] Compartmentalize some code
+- [ ] Stop lib/posts.js and use the hashmap to get posts on frontpage
 
