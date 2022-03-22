@@ -28,3 +28,14 @@ publishedAt: 03/16/22
 
 I **love** markdown, I think it's *super cool* and will use it in my future projects hehe
 ```
+
+## Why do I need a GitHub ID and Client Secret?
+
+I was trying to implement next-auth but didn't finish. Here's a roadmap of stuff I plan to add in the future :O
+
+- [] Use Next-Auth.js for editor
+- [] Implement a comments system
+- [] Fix the bad editor UI
+- [] Compartmentalize some code
+- [] Stop lib/posts.js and use the hashmap to get posts on frontpage
+
