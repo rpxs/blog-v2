@@ -6,8 +6,8 @@ const client = new redis(process.env.REDIS_URL);
 export default async function edit(req, res) {
   const slug = req.query.slug;
   if (req.method === "POST" && req.body.data != null) {
+    debugger
     const { data } = req.body;
-    console.log(req.body.password);
     if (
       req.body.password &&
       req.body.password === process.env.EDITOR_PASSWORD
@@ -25,3 +25,4 @@ export default async function edit(req, res) {
     res.status(200).send(source);
   }
 }
+
